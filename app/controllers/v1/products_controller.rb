@@ -16,9 +16,8 @@ class V1::ProductsController < ApplicationController
     if @product.destroy
       head(:ok)
     else
-      head(:unproceasable_entity)
+      head(:unprocessable_entity)
     end
-
 
   end
 
