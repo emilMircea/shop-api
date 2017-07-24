@@ -1,7 +1,7 @@
 class V1::ProductsController < ApplicationController
   def index
     @products = Product.all
-    render json: @products, status: :ok
+    render :index, status: :ok
   end
 
   def create
